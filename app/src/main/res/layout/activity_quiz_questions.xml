@@ -18,14 +18,16 @@
         android:id="@+id/tvQuestion"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:margin="10dp"
+        android:layout_margin="10dp"
         android:layout_weight="1"
         android:gravity="center"
         tools:text="What country does this flag belong to?"
         android:text="TextView"
         android:textColor="@color/black"
         android:textSize="20sp" />
+
     <ImageView
+        android:id="@+id/questionImage"
         android:layout_width="match_parent"
         tools:src="@drawable/bahamas"
         android:layout_marginTop="10dp"
@@ -55,7 +57,7 @@
                  />
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/tvProgress"
                 android:layout_width="0dp"
                 android:gravity="center"
                 android:layout_height="wrap_content"
@@ -106,9 +108,10 @@
         />
 
     <Button
-        android:id="@+id/button"
-        android:text="Button"
-        style="@style/text_views_q" />
+        android:id="@+id/submitButton"
+        android:text="Submit"
+        style="@style/text_views_q"
+        android:background="@color/design_default_color_primary"/>
     </LinearLayout>
 
 </ScrollView>
